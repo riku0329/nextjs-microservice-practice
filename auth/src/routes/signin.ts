@@ -45,4 +45,4 @@ router.post(
   }
 );
 
-export { router as singinRouter };
+export { router as signinRouter };
