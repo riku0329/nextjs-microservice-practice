@@ -26,6 +26,10 @@ build:
         manual:
           - src: '**/*.js'
             dest: .
+          - src: "**/*.css"
+            dest: .
+          - src: "**/*.scss"
+            dest: .
     - image: asia.gcr.io/ticketing-dev-285111/tickets
       context: tickets
       docker:

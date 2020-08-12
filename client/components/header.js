@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import '../styles/Layout/l-header.scss'
 
 export default ({ currentUser }) => {
   const links = [
@@ -9,22 +10,22 @@ export default ({ currentUser }) => {
     .filter((linkConfig) => linkConfig)
     .map(({ label, href }) => {
       return (
-        <li key={href} className='nav-item'>
+        <li key={href}>
           <Link href={href}>
-            <a className='nav-link'>{label}</a>
+            <a>{label}</a>
           </Link>
         </li>
       );
     });
 
   return (
-    <nav className='navbar navbar-light bg-light'>
+    <nav className='header'>
       <Link href='/'>
-        <a className='navbar-brand'>GitTix</a>
+        <a className='header_title'>GitTix</a>
       </Link>
 
-      <div className='d-flex justify-content-end'>
-        <ul className='nav d-flex align-items-center'>{links}</ul>
+      <div>
+        <ul className='header_auth'>{links}</ul>
       </div>
     </nav>
   );

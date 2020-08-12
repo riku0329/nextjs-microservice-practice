@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+  &_auth {
+    display: flex;
+  }
+
+  &_auth li:first-child {
+    margin-right: 4px;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+
+  &_title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
